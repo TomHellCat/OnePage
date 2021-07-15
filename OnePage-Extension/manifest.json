@@ -1,0 +1,18 @@
+{
+  "name": "OnePage",
+  "description": "Comment on any webpage",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [ {
+     "js": [   "js/materialize.min.js" ],
+     "css": [  "css/materialize.min.css"],
+    "matches": [ "http://*/*" ]
+  } ],
+  "permissions": [ "activeTab","tabs"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {   
+      "48": "i1.png"
+    }
+  }
+}
